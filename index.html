@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML to JustCs</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <h1>Welcome to HTML to JustCs Converter</h1>
+      <p>
+        This page is a simple app that can convert HTML into
+        <a href="https://github.com/JeyDotC/JustCs">JustCs</a> syntax.
+      </p>
+      <div>
+        <label for="sourceHtml" class="form-label">Paste the HTML here</label>
+        <textarea id="sourceHtml" class="form-control" rows="15"></textarea>
+        <div class="text-end">
+          <button id="clearButton" class="btn btn-light btn-sm">
+            Clear
+          </button>
+          <button id="convertButton" class="btn btn-success" disabled>
+            Convert To JustCs
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">JustCs version will appear here</label>
+        <div class="text-end">
+          <button
+            id="copyToClipboardButton"
+            class="btn btn-light btn-sm"
+            disabled
+          >
+            Copy to Clipboard
+          </button>
+        </div>
+        <pre
+          id="targetJustCs"
+          class="border rounded bg-light"
+        ><code></code></pre>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
